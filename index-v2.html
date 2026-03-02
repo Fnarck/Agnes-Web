@@ -46,6 +46,24 @@
             aspect-ratio: 1 / 1;
             object-fit: cover;
         }
+
+        /* Force checkbox visible et cliquable */
+        .form-check {
+            align-items: center !important;
+        }
+
+        .form-check input[type="checkbox"] {
+            all: revert !important;
+            width: 18px !important;
+            height: 18px !important;
+            cursor: pointer !important;
+            flex-shrink: 0 !important;
+            accent-color: #7a9e7e !important;
+        }
+
+        .form-check label {
+            cursor: pointer !important;
+        }
     </style>
 </head>
 
@@ -687,8 +705,8 @@
 
                 <!-- Formulaire -->
                 <div class="contact-form-wrap reveal">
-                    <form id="contactForm" action="https://formspree.io/frguillaud@gmail.com" method="POST" novalidate
-                        aria-label="Formulaire de contact">
+                    <form id="contactForm" action="mailto:frguillaud@gmail.com" method="POST" enctype="text/plain"
+                        novalidate aria-label="Formulaire de contact">
                         <div class="form-group">
                             <label for="name">Votre nom *</label>
                             <input type="text" id="name" name="name" required autocomplete="name"
