@@ -1169,11 +1169,21 @@ img {
 }
 
 .form-check input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   margin-top: 2px;
   accent-color: var(--sage-dark);
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  pointer-events: all;
+  appearance: auto;
+  -webkit-appearance: checkbox;
+}
+
+.form-check label {
+  cursor: pointer;
 }
 
 .form-check label {
