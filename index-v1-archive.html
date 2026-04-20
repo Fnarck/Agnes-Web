@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agnès Brandely — Fleurs de Bach · Sophrologie · Bien-être | Clermont-Ferrand</title>
+  <meta name="description"
+    content="Agnès Brandely, conseillère en Fleurs du Dr Bach, sophrologue et praticienne en soins énergétiques à Lempdes (Clermont-Ferrand). Accompagnements en présentiel et visio." />
+  <meta name="keywords"
+    content="fleurs de bach, sophrologie, massage bien-être, soins énergétiques, Clermont-Ferrand, Lempdes, Auvergne, thérapie holistique, équilibre émotionnel" />
+  <meta name="author" content="Agnès Brandely" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Agnès Brandely — Fleurs de Bach · Sophrologie · Bien-être" />
+  <meta property="og:description"
+    content="Accompagnement émotionnel bienveillant à Lempdes, Auvergne. Fleurs de Bach, sophrologie, massages énergétiques et soins. Présentiel & visio." />
+  <meta property="og:image" content="images/hero_botanical.png" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Agnès Brandely — Fleurs de Bach & Bien-être",
+    "description": "Conseillère en Fleurs du Dr Bach, sophrologue et praticienne en massages de bien-être et soins énergétiques.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lempdes",
+      "addressRegion": "Auvergne-Rhône-Alpes",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Clermont-Ferrand", "Lempdes", "Auvergne", "France"],
+    "priceRange": "€€",
+    "serviceType": ["Fleurs de Bach", "Sophrologie", "Massage bien-être", "Soins énergétiques", "Ateliers"],
+    "availableLanguage": "French",
+    "url": "https://agnesbrandely.fr"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" aria-label="Navigation principale">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Accueil">
+        <span class="logo-name">Agnès Brandely</span>
+        <span class="logo-tagline">Fleurs de Bach · Bien-être</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#approche" class="nav-link">Approche</a></li>
+        <li><a href="#apropos" class="nav-link">À propos</a></li>
+        <li><a href="#accompagnements" class="nav-link">Accompagnements</a></li>
+        <li><a href="#soins" class="nav-link">Soins</a></li>
+        <li><a href="#ateliers" class="nav-link">Ateliers</a></li>
+        <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+        <li><a href="#contact" class="nav-cta" id="navCtaBtn">Prendre RDV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero" aria-label="Accueil">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="images/hero_botanical.png" alt="" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Clermont-Ferrand · Présentiel & Visio</p>
+      <h1 class="hero-title reveal">
+        Retrouver l'équilibre.<br />
+        <em>Revenir à soi.</em>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Fleurs du Dr Bach · Sophrologie · Soins énergétiques<br />
+        Un accompagnement bienveillant, à votre rythme.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary" id="heroCta">Prendre rendez-vous</a>
+        <a href="#approche" class="btn btn-ghost">Découvrir l'approche</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PHILOSOPHIE BACH
+  ═══════════════════════════════════════════ -->
+  <section id="approche" class="section" aria-labelledby="approche-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">La philosophie</span>
+        <h2 id="approche-title" class="section-title">Le Dr Edward Bach</h2>
+      </div>
+      <div class="bach-grid">
+        <div class="bach-photo reveal">
+          <div class="bach-portrait-wrap">
+            <img src="images/dr_bach.jpg" alt="Portrait du Dr Edward Bach, fondateur des Fleurs de Bach"
+              class="bach-portrait" onerror="this.style.display='none'" />
+            <div class="bach-portrait-deco" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="bach-text reveal">
+          <p class="bach-intro">
+            Le Dr Edward Bach était bien plus qu'un médecin — c'était avant tout un chercheur de vérité, un homme
+            profondément sensible, convaincu que la maladie ne pouvait être comprise sans tenir compte de l'Être dans sa
+            globalité.
+          </p>
+          <p>
+            Après avoir exercé comme médecin, bactériologiste et homéopathe, il choisit de quitter une brillante
+            carrière pour suivre son intuition. Il part dans la nature, persuadé de trouver des remèdes simples,
+            accessibles à tous, répondant aux déséquilibres émotionnels de l'être humain.
+          </p>
+          <p>
+            Il met au point <strong>38 élixirs floraux</strong>, chacun correspondant à un état émotionnel précis :
+            peur, doute, découragement, colère, hypersensibilité…
+          </p>
+          <blockquote class="bach-quote">
+            <p>« Tant que l'âme, le corps et l'esprit sont en harmonie,<br />rien ne peut nous affecter. »</p>
+            <cite>— Dr Edward Bach</cite>
+          </blockquote>
+          <div class="bach-flowers" aria-hidden="true">
+            <img src="images/fleurs_bach_multiples.jpg" alt="Composition de Fleurs de Bach" class="bach-flowers-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       À PROPOS
+  ═══════════════════════════════════════════ -->
+  <section id="apropos" class="section section-alt" aria-labelledby="apropos-title">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-photo reveal">
+          <div class="apropos-portrait-wrap">
+            <img src="images/agnes_portrait.jpg"
+              alt="Portrait d'Agnès Brandely, conseillère en Fleurs de Bach et sophrologue à Lempdes"
+              class="apropos-portrait" />
+          </div>
+          <div class="apropos-badges reveal">
+            <span class="badge">🌸 Fleurs de Bach</span>
+            <span class="badge">🌬️ Sophrologue</span>
+            <span class="badge">✨ Soins énergétiques</span>
+            <span class="badge">💆 Massage bien-être</span>
+          </div>
+        </div>
+        <div class="apropos-text reveal">
+          <span class="section-tag">À propos</span>
+          <h2 id="apropos-title" class="section-title-left">Je m'appelle<br /><em>Agnès Brandely</em></h2>
+          <p>
+            Conseillère en Fleurs du Dr Bach, sophrologue, praticienne en massage de bien-être et en soins énergétiques,
+            j'accompagne celles et ceux qui souhaitent retrouver <strong>équilibre, paix intérieure et
+              harmonie</strong>.
+          </p>
+          <p>
+            Depuis toujours, je ressens profondément qu'un monde plus harmonieux et plus paisible est possible. C'est au
+            cours d'une période douloureuse de ma vie que j'ai rencontré les Fleurs du Dr Bach — une évidence, une
+            source de joie, d'espoir et d'inspiration.
+          </p>
+          <p>
+            Cette approche m'a permis de transformer mon regard sur moi-même et sur le monde, en comprenant le lien
+            profond entre nos émotions et notre santé.
+          </p>
+          <div class="formation-list">
+            <h3 class="formation-title">Mon parcours</h3>
+            <ul>
+              <li>🌿 Conseillère agréée en Fleurs du Dr Bach — après 25 ans d'expérimentation personnelle</li>
+              <li>🌬️ Sophrologue certifiée</li>
+              <li>💆 Techniques de massage et soins énergétiques</li>
+              <li>✨ Formation en cours : décodage psychosomatique</li>
+            </ul>
+          </div>
+          <p class="apropos-coda">
+            <em>Basée à Lempdes, proche de Clermont-Ferrand — disponible en présentiel et en visio.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ACCOMPAGNEMENTS
+  ═══════════════════════════════════════════ -->
+  <section id="accompagnements" class="section" aria-labelledby="accompagnements-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Accompagnements</span>
+        <h2 id="accompagnements-title" class="section-title">Mon accompagnement émotionnel</h2>
+        <p class="section-intro">Un espace d'écoute respectueux et sans jugement, dans lequel vous pouvez déposer ce qui
+          vous traverse.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card reveal" aria-labelledby="card-bach">
+          <div class="card-icon" aria-hidden="true">🌸</div>
+          <h3 id="card-bach" class="card-title">Consultation Fleurs de Bach</h3>
+          <p class="card-text">
+            Ensemble, nous explorons votre vécu émotionnel du moment afin de mettre en lumière les blocages, les
+            répétitions ou les tensions intérieures. À l'issue de la séance, une proposition personnalisée de Fleurs de
+            Bach vous est faite pour soutenir en douceur votre rééquilibrage.
+          </p>
+          <div class="card-tags">
+            <span>Questionnement</span>
+            <span>Transition</span>
+            <span>Fragilité intérieure</span>
+          </div>
+        </article>
+
+        <article class="card reveal" aria-labelledby="card-sophro">
+          <div class="card-icon" aria-hidden="true">🌬️</div>
+          <h3 id="card-sophro" class="card-title">Séance de sophrologie</h3>
+          <p class="card-text">
+            Méthode douce associant respiration consciente, relaxation guidée et visualisation positive. Elle permet de
+            mieux gérer le stress, d'apaiser les émotions envahissantes et de relâcher les tensions accumulées dans le
+            corps et le mental.
+          </p>
+          <div class="card-tags">
+            <span>Stress</span>
+            <span>Anxiété</span>
+            <span>Ressources intérieures</span>
+          </div>
+        </article>
+
+        <article class="card reveal" aria-labelledby="card-cranien">
+          <div class="card-icon" aria-hidden="true">🤲</div>
+          <h3 id="card-cranien" class="card-title">Libération émotionnelle par toucher crânien</h3>
+          <p class="card-text">
+            Ce soin subtil aide à dissoudre les blocages inconscients qui influencent votre quotidien. Il agit sur des
+            zones clés du crâne afin de libérer les tensions émotionnelles et les schémas répétitifs, favorisant le
+            lâcher-prise et une profonde sensation de paix.
+          </p>
+          <div class="card-tags">
+            <span>Mémoires émotionnelles</span>
+            <span>Lâcher-prise</span>
+            <span>Clarté</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="accompagnement-footer reveal">
+        <div class="target-cards">
+          <div class="target-card">
+            <span class="target-icon">💛</span>
+            <h4>Difficultés émotionnelles & relationnelles</h4>
+            <p>J'aide à apaiser les conflits, retrouver la confiance et accéder à vos propres ressources pour avancer
+              avec sérénité.</p>
+          </div>
+          <div class="target-card">
+            <span class="target-icon">💛</span>
+            <h4>Douleurs ou symptômes chroniques</h4>
+            <p>Je vous aide à comprendre l'origine des blocages, souvent liés au stress, grâce aux Fleurs de Bach et au
+              décodage psychosomatique.</p>
+          </div>
+        </div>
+        <p class="disclaimer">
+          <em>Cet accompagnement ne se substitue pas à un suivi médical, mais s'inscrit en complément, dans une approche
+            globale de la personne.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOINS CORPS & VISAGE
+  ═══════════════════════════════════════════ -->
+  <section id="soins" class="section section-alt" aria-labelledby="soins-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Soins corps & visage</span>
+        <h2 id="soins-title" class="section-title">Massages & soins bien-être</h2>
+        <p class="section-intro">Beauté et équilibre intérieur sont intimement liés. Ces soins s'inscrivent dans un
+          moment où le corps, le cœur et l'esprit peuvent simplement se laisser être.</p>
+      </div>
+
+      <div class="soins-grid">
+
+        <article class="soin-item reveal" aria-labelledby="soin-energie">
+          <div class="soin-number" aria-hidden="true">01</div>
+          <div class="soin-content">
+            <h3 id="soin-energie" class="soin-title">Massage énergétique chinois</h3>
+            <p class="soin-tagline">Relancer l'énergie · Libérer les tensions · Retrouver la fluidité</p>
+            <p>Ce massage à l'huile favorise la circulation harmonieuse de l'énergie vitale à travers les méridiens. Il
+              aide à dissoudre les blocages, relâcher les tensions profondes et retrouver un équilibre à la fois
+              physique et émotionnel.</p>
+          </div>
+        </article>
+
+        <article class="soin-item reveal" aria-labelledby="soin-drainage">
+          <div class="soin-number" aria-hidden="true">02</div>
+          <div class="soin-content">
+            <h3 id="soin-drainage" class="soin-title">Drainage esthétique</h3>
+            <p class="soin-tagline">Stimuler · Éliminer · Relâcher</p>
+            <p>Par des gestes lents, légers et rythmés, inspirés des techniques de drainage lymphatique. Au-delà de son
+              effet esthétique, ce soin act sur le système nerveux, favorise un profond relâchement et procure une
+              sensation globale d'harmonie.</p>
+          </div>
+        </article>
+
+        <article class="soin-item reveal" aria-labelledby="soin-visage">
+          <div class="soin-number" aria-hidden="true">03</div>
+          <div class="soin-content">
+            <h3 id="soin-visage" class="soin-title">Soins du visage personnalisés</h3>
+            <p class="soin-tagline">Un pur moment de bien-être</p>
+            <p>Chaque soin est adapté à votre peau et à vos besoins du moment. Au-delà des bienfaits cutanés, ces soins
+              offrent un temps précieux pour se déposer et retrouver une sensation profonde de calme. Le visage étant un
+              miroir de nos émotions, ces soins libèrent aussi les crispations accumulées.</p>
+          </div>
+        </article>
+
+        <div class="soin-flowers-img reveal" aria-hidden="true">
+          <img src="images/fleur_bach_jaune.jpg" alt="" class="soin-flower" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ATELIERS
+  ═══════════════════════════════════════════ -->
+  <section id="ateliers" class="section" aria-labelledby="ateliers-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Partage & apprentissage</span>
+        <h2 id="ateliers-title" class="section-title">Ateliers</h2>
+        <p class="section-intro">Des temps de partage pour transmettre la philosophie du Dr Bach et permettre une
+          appropriation concrète, simple et vivante des Fleurs de Bach dans le quotidien. En présentiel ou en visio — 1
+          fois par mois.</p>
+      </div>
+
+      <div class="ateliers-grid">
+        <article class="atelier-card atelier-featured reveal" aria-labelledby="atelier-initiation">
+          <div class="atelier-badge">🌸 Atelier phare</div>
+          <h3 id="atelier-initiation" class="atelier-title">Initiation aux Fleurs de Bach</h3>
+          <p>Découvrez l'origine des Fleurs de Bach, leur fonctionnement, ainsi que les 38 élixirs floraux et leurs
+            principales indications émotionnelles.</p>
+          <p>Adressé à toute personne souhaitant mieux se connaître sur le plan émotionnel et apprendre à utiliser les
+            fleurs pour elle-même ou ses proches.</p>
+          <div class="atelier-details">
+            <div class="atelier-detail"><span>📅</span> 2 demi-journées</div>
+            <div class="atelier-detail"><span>🕑</span> 14h00 – 18h00</div>
+            <div class="atelier-detail"><span>💛</span> 35 € / demi-journée</div>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm" id="atelierCta">S'inscrire à l'atelier</a>
+        </article>
+
+        <div class="ateliers-themes reveal">
+          <h3 class="themes-title">Ateliers à thème</h3>
+          <p class="themes-intro">Des ateliers centrés sur des thématiques spécifiques, qui évoluent en fonction des
+            besoins et des demandes.</p>
+          <ul class="themes-list">
+            <li>
+              <span class="theme-dot"></span>
+              <div>
+                <strong>La confiance en soi</strong>
+                <p>Retrouver l'estime et la confiance perdues</p>
+              </div>
+            </li>
+            <li>
+              <span class="theme-dot"></span>
+              <div>
+                <strong>Les périodes de transition</strong>
+                <p>Traverser les changements avec sérénité</p>
+              </div>
+            </li>
+            <li>
+              <span class="theme-dot"></span>
+              <div>
+                <strong>L'hypersensibilité</strong>
+                <p>Comprendre et apprivoiser sa sensibilité</p>
+              </div>
+            </li>
+            <li>
+              <span class="theme-dot"></span>
+              <div>
+                <strong>La gestion du stress</strong>
+                <p>Des outils concrets pour retrouver le calme</p>
+              </div>
+            </li>
+          </ul>
+          <p class="themes-cta-text">Déposez vos coordonnées pour recevoir les prochaines dates :</p>
+          <a href="#contact" class="btn btn-outline btn-sm">Me tenir informé(e)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TARIFS
+  ═══════════════════════════════════════════ -->
+  <section id="tarifs" class="section section-alt" aria-labelledby="tarifs-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Investissement</span>
+        <h2 id="tarifs-title" class="section-title">Tarifs</h2>
+        <p class="section-intro">Consultations possibles en présentiel à Lempdes (Clermont-Ferrand) ou en visio.</p>
+      </div>
+
+      <div class="tarifs-grid">
+
+        <!-- Accompagnements émotionnels -->
+        <div class="tarif-block reveal" aria-labelledby="tarif-accomp">
+          <div class="tarif-header">
+            <span class="tarif-icon">🌿</span>
+            <h3 id="tarif-accomp" class="tarif-block-title">Accompagnements émotionnels</h3>
+            <p class="tarif-sub">Fleurs de Bach · Sophrologie · Toucher crânien</p>
+          </div>
+          <table class="tarif-table" aria-label="Tarifs accompagnements individuels">
+            <thead>
+              <tr>
+                <th scope="col">Durée</th>
+                <th scope="col">Tarif</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>40 minutes</td>
+                <td>40 €</td>
+              </tr>
+              <tr>
+                <td>1 heure</td>
+                <td>55 €</td>
+              </tr>
+              <tr>
+                <td>1 heure 30</td>
+                <td>65 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tarif-forfaits">
+            <h4 class="forfait-title">Forfaits</h4>
+            <div class="forfait-item">
+              <span>3 séances × 1h</span>
+              <span class="forfait-prix">150 € <em>(50 €/séance)</em></span>
+            </div>
+            <div class="forfait-item">
+              <span>3 séances × 1h30</span>
+              <span class="forfait-prix">160 € <em>(53 €/séance)</em></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soins corps & visage -->
+        <div class="tarif-block reveal" aria-labelledby="tarif-soins">
+          <div class="tarif-header">
+            <span class="tarif-icon">💛</span>
+            <h3 id="tarif-soins" class="tarif-block-title">Massage & soins visage</h3>
+            <p class="tarif-sub">Massage énergétique · Drainage · Soins visage</p>
+          </div>
+          <table class="tarif-table" aria-label="Tarifs massages et soins du visage">
+            <thead>
+              <tr>
+                <th scope="col">Durée</th>
+                <th scope="col">Tarif</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>40 minutes</td>
+                <td>40 €</td>
+              </tr>
+              <tr>
+                <td>1 heure</td>
+                <td>60 €</td>
+              </tr>
+              <tr>
+                <td>1 heure 30</td>
+                <td>75 €</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tarif-forfaits">
+            <h4 class="forfait-title">Ateliers</h4>
+            <div class="forfait-item">
+              <span>Initiation Fleurs de Bach (demi-journée)</span>
+              <span class="forfait-prix">35 €</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tarifs-cta reveal">
+        <p>Un doute sur la séance adaptée à votre situation ? Contactez-moi, je vous guiderai.</p>
+        <a href="#contact" class="btn btn-primary" id="tarifCta">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT & RDV
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Rencontrons-nous</span>
+        <h2 id="contact-title" class="section-title">Prendre rendez-vous</h2>
+        <p class="section-intro">Je vous réponds dans les plus brefs délais pour convenir d'un moment qui vous convient.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Formulaire -->
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" action="https://formspree.io/f/VOTRE_ID" method="POST" novalidate
+            aria-label="Formulaire de contact">
+            <div class="form-group">
+              <label for="name">Votre nom *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Prénom Nom" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="votre@email.fr" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="06 XX XX XX XX" />
+            </div>
+            <div class="form-group">
+              <label for="service">Vous souhaitez…</label>
+              <select id="service" name="service">
+                <option value="">Choisir un type de séance</option>
+                <option value="bach">Consultation Fleurs de Bach</option>
+                <option value="sophro">Séance de sophrologie</option>
+                <option value="cranien">Libération par toucher crânien</option>
+                <option value="massage">Massage énergétique</option>
+                <option value="drainage">Drainage esthétique</option>
+                <option value="visage">Soin du visage</option>
+                <option value="atelier">Atelier (initiation ou thème)</option>
+                <option value="autre">Autre / je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Dites-moi ce qui vous amène, ou posez-moi vos questions…"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" id="rgpd" name="rgpd" required />
+              <label for="rgpd">J'accepte que mes données soient utilisées uniquement pour répondre à ma
+                demande.</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Envoyer ma demande</span>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </button>
+            <p id="formSuccess" class="form-success" aria-live="polite" role="status"></p>
+          </form>
+        </div>
+
+        <!-- Infos + Calendly -->
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <h3 class="contact-card-title">Réservez directement</h3>
+            <p>Pour une prise de rendez-vous immédiate, utilisez mon agenda en ligne :</p>
+            <!-- Calendly inline widget placeholder -->
+            <div class="calendly-placeholder" id="calendlyWidget">
+              <div class="calendly-inner">
+                <span class="calendly-icon" aria-hidden="true">📅</span>
+                <p>Agenda en ligne</p>
+                <a href="https://calendly.com/VOTRE_LIEN" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary" id="calendlyBtn">
+                  Voir les disponibilités
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <span class="detail-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Lempdes</strong>
+                <span>Proche de Clermont-Ferrand, Auvergne</span>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-icon" aria-hidden="true">💻</span>
+              <div>
+                <strong>Présentiel & Visio</strong>
+                <span>Les consultations sont disponibles dans les deux formats</span>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-icon" aria-hidden="true">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>contact@agnesbrandely.fr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <p class="footer-name">Agnès Brandely</p>
+        <p class="footer-desc">Conseillère en Fleurs du Dr Bach · Sophrologue<br />Praticienne en massage de bien-être &
+          soins énergétiques</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="#approche">Approche Bach</a>
+        <a href="#apropos">À propos</a>
+        <a href="#accompagnements">Accompagnements</a>
+        <a href="#soins">Soins</a>
+        <a href="#ateliers">Ateliers</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-legal">
+        <p>© 2025 Agnès Brandely · Lempdes, Auvergne</p>
+        <p>
+          <a href="#" id="mentionsBtn">Mentions légales</a>
+          ·
+          <a href="#" id="rgpdBtn">Politique de confidentialité</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mentions légales modal -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <h2 id="modalTitle" class="modal-title">Mentions légales</h2>
+      <div class="modal-content">
+        <p><strong>Responsable du site :</strong> Agnès Brandely</p>
+        <p><strong>Activité :</strong> Conseillère en Fleurs du Dr Bach, Sophrologue, Praticienne en bien-être</p>
+        <p><strong>Adresse :</strong> Lempdes (63), Auvergne-Rhône-Alpes, France</p>
+        <p><strong>Contact :</strong> contact@agnesbrandely.fr</p>
+        <hr />
+        <h3>Avertissement</h3>
+        <p>Les accompagnements proposés par Agnès Brandely ne se substituent en aucun cas à un suivi médical. Ils
+          s'inscrivent en complément d'une prise en charge médicale conventionnelle.</p>
+        <hr />
+        <h3>Données personnelles</h3>
+        <p>Les données collectées via le formulaire de contact sont utilisées uniquement pour répondre à votre demande
+          et ne sont jamais transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de
+          rectification et de suppression de vos données.</p>
+        <hr />
+        <h3>Hébergement</h3>
+        <p>Ce site est hébergé chez Hostinger.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
