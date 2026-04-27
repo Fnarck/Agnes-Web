@@ -29,37 +29,27 @@ Renomme et place ces fichiers dans le dossier `images/` :
 | `fleurs_bach_multiples.png` | La composition 3 fleurs de Bach |
 | `fleur_bach_jaune.png` | La fleur jaune de Bach |
 
-## ⚙️ Avant de mettre en ligne
+## ⚙️ État du Projet & Next Steps
 
-### 1. Formspree (formulaire de contact)
-1. Créer un compte gratuit sur [formspree.io](https://formspree.io)
+### ✅ Effectué
+- **Contenu & Design** : Intégration complète (Cormorant + Inter, animations, témoignages, tarifs à jour).
+- **SEO & Méta** : Configuration terminée pour `agnesbrandely.fr` (Sitemap, robots.txt, schema.org).
+- **Hébergement** : Déployé en production sur **Vercel** via GitHub.
+- **Domaine** : `agnesbrandely.fr` déposé chez OVH (DNSSEC actif) et relié à Vercel.
+- **Email** : Hébergement gratuit 100M activé sur OVH. Redirection de `contact@agnesbrandely.fr` vers `agnesb63370@gmail.com` en place.
+
+### ⏳ Reste à faire (avec Agnès)
+#### 1. Formspree (formulaire de contact)
+1. Créer un compte gratuit sur [formspree.io](https://formspree.io) avec l'adresse `agnesb63370@gmail.com`
 2. Créer un nouveau formulaire et copier l'ID généré (ex: `xabc1234`)
-3. Dans `index.html`, remplacer :
+3. Dans `index.html`, mettre à jour la balise form (actuellement configurée avec un `mailto:`) :
+   ```html
+   <form id="contactForm" action="https://formspree.io/f/VOTRE_ID" method="POST">
    ```
-   action="https://formspree.io/f/VOTRE_ID"
-   ```
-   par ton ID Formspree.
 
-### 2. Calendly (prise de RDV)
+#### 2. Calendly (prise de RDV - Optionnel)
 1. Créer un compte sur [calendly.com](https://calendly.com)
-2. Dans `index.html`, remplacer `https://calendly.com/VOTRE_LIEN` par le vrai lien.
-
-### 3. Nom de domaine
-- Remplacer `agnesbrandely.fr` dans `sitemap.xml` et `robots.txt` par le vrai domaine d'Agnès.
-- Idem dans le schema.org JSON-LD de `index.html`.
-- Idem dans le footer et les meta tags.
-
-### 4. Email
-- Remplacer `contact@agnesbrandely.fr` dans `index.html` par la vraie adresse.
-
-## 🚀 Déploiement sur Hostinger
-
-1. Connecte-toi au panel Hostinger (hPanel)
-2. Ouvre **File Manager** → public_html
-3. Supprime les fichiers par défaut (index.php, etc.)
-4. Upload tout le contenu du dossier `Agnes-Web/` (garder la structure)
-5. Vérifier que `index.html` est bien à la racine de `public_html`
-6. Le site est en ligne ! 🎉
+2. Dans `index.html`, chercher `https://calendly.com/VOTRE_LIEN` et remplacer par le vrai lien d'Agnès.
 
 ## 📱 Instagram First — Stratégie (Phase 2)
 
