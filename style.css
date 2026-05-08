@@ -1262,6 +1262,14 @@ img {
 /* ════════════════════════════════════
    CONTACT
 ════════════════════════════════════ */
+#contact {
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+#contact .section-header {
+  margin-bottom: 2rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
