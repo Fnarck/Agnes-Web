@@ -1426,6 +1426,39 @@ img {
   color: var(--text-muted);
 }
 
+.map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.map-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.map-link:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.map-link--waze {
+  border-color: #33ccff;
+  color: #0099cc;
+}
+
+.map-link--waze:hover {
+  background: #33ccff;
+  color: var(--white);
+}
+
 /* ════════════════════════════════════
    FOOTER
 ════════════════════════════════════ */
