@@ -79,15 +79,17 @@ const sectionObserver = new IntersectionObserver((entries) => {
 sections.forEach(s => sectionObserver.observe(s));
 
 // ═══════════════════════════
-// CONTACT FORM (Test mode — mailto)
+// CONTACT FORM (Formspree)
 // ═══════════════════════════
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const formSuccess = document.getElementById('formSuccess');
 
 if (form) {
-  form.addEventListener('submit', (e) => {
-    // Basic validation
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validation
     const required = form.querySelectorAll('[required]');
     let valid = true;
     required.forEach(field => {
@@ -98,15 +100,41 @@ if (form) {
       }
     });
     if (!valid) {
-      e.preventDefault();
       formSuccess.style.display = 'block';
       formSuccess.style.background = 'rgba(192,57,43,.08)';
       formSuccess.style.color = '#c0392b';
       formSuccess.textContent = 'Merci de remplir tous les champs obligatoires et de cocher la case RGPD.';
       return;
     }
-    // Let the native form submit (mailto:) proceed
-    submitBtn.querySelector('span:first-child').textContent = 'Ouverture messagerie…';
+
+    submitBtn.disabled = true;
+    submitBtn.querySelector('span:first-child').textContent = 'Envoi en cours…';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (response.ok) {
+        formSuccess.style.display = 'block';
+        formSuccess.style.background = 'rgba(74,124,89,.08)';
+        formSuccess.style.color = '#2d6a4f';
+        formSuccess.textContent = 'Message envoyé ! Agnès vous répondra dans les meilleurs délais.';
+        form.reset();
+        submitBtn.querySelector('span:first-child').textContent = 'Message envoyé ✓';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      formSuccess.style.display = 'block';
+      formSuccess.style.background = 'rgba(192,57,43,.08)';
+      formSuccess.style.color = '#c0392b';
+      formSuccess.textContent = "Une erreur s'est produite. Merci de réessayer ou d'écrire à contact@agnesbrandely.fr";
+      submitBtn.disabled = false;
+      submitBtn.querySelector('span:first-child').textContent = 'Envoyer ma demande';
+    }
   });
 }
 
