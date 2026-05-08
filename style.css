@@ -1434,7 +1434,9 @@ img {
 }
 
 .map-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: 0.75rem;
   padding: 0.25rem 0.6rem;
   border-radius: 2rem;
@@ -1442,6 +1444,10 @@ img {
   color: var(--accent);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
+}
+
+.map-link svg {
+  flex-shrink: 0;
 }
 
 .map-link:hover {
