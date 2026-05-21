@@ -34,7 +34,7 @@
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Inter', -apple-system, sans-serif;
-  --nav-h: 80px;
+  --nav-h: 112px;
 }
 
 html {
@@ -271,12 +271,50 @@ img {
 /* ════════════════════════════════════
    NAVIGATION
 ════════════════════════════════════ */
+/* ─── BANDEAU ANNONCE DÉFILANT ─── */
+.announcement-marquee {
+  background: var(--sage-dark);
+  color: var(--white);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  padding-right: 4rem;
+  display: inline-block;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
 #navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: var(--nav-h);
+  height: auto;
   z-index: 1000;
   overflow: visible;
   transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
