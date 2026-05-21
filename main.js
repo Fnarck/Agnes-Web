@@ -169,11 +169,26 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal
 // ═══════════════════════════
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
-    const target = document.querySelector(anchor.getAttribute('href'));
+    const targetId = anchor.getAttribute('href');
+    const target = document.querySelector(targetId);
     if (!target) return;
     e.preventDefault();
     const navH = navbar.offsetHeight;
     const top = target.getBoundingClientRect().top + window.scrollY - navH - 8;
     window.scrollTo({ top, behavior: 'smooth' });
+
+    // Cas spécifique pour le bouton d'agenda/disponibilités
+    if (anchor.id === 'calendlyBtn') {
+      const serviceSelect = document.getElementById('service');
+      const messageTextarea = document.getElementById('message');
+      
+      if (serviceSelect) {
+        serviceSelect.value = 'appel'; // Sélectionne "Avoir un échange téléphonique"
+      }
+      
+      if (messageTextarea && !messageTextarea.value.trim()) {
+        messageTextarea.value = "Bonjour, je souhaiterais connaître vos disponibilités afin de convenir d'un rendez-vous.";
+      }
+    }
   });
 });
