@@ -2,6 +2,40 @@
 'use strict';
 
 // ═══════════════════════════
+// BANDEAU DÉFILANT DYNAMIQUE (Edité via marquee.txt)
+// ═══════════════════════════
+const marqueeContent = document.querySelector('.marquee-content');
+const marqueeWrapper = document.querySelector('.announcement-marquee');
+
+if (marqueeContent && marqueeWrapper) {
+  fetch('marquee.txt')
+    .then(response => {
+      if (!response.ok) throw new Error();
+      return response.text();
+    })
+    .then(text => {
+      const cleanText = text.trim();
+      if (cleanText) {
+        marqueeContent.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+          const span = document.createElement('span');
+          span.innerHTML = `${cleanText} &nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;`;
+          marqueeContent.appendChild(span);
+        }
+        marqueeWrapper.style.display = '';
+      } else {
+        marqueeWrapper.style.display = 'none';
+        document.documentElement.style.setProperty('--nav-h', window.innerWidth <= 640 ? '60px' : '80px');
+      }
+    })
+    .catch(() => {
+      // Masquer proprement en cas d'erreur de chargement du fichier
+      marqueeWrapper.style.display = 'none';
+      document.documentElement.style.setProperty('--nav-h', window.innerWidth <= 640 ? '60px' : '80px');
+    });
+}
+
+// ═══════════════════════════
 // NAVBAR scroll behaviour
 // ═══════════════════════════
 const navbar = document.getElementById('navbar');
