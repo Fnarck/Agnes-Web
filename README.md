@@ -19,6 +19,20 @@ Agnes-Web/
     └── fleur_bach_jaune.jpg         ← Fleur jaune de Bach
 ```
 
+## État du projet — Sprint 2026-05-21
+
+### ✅ Effectué
+
+#### Thérapie fréquentielle (Bio-résonance)
+- Intégration du nouveau soin avec description du déroulement, du bilan et des tags associés.
+- Création d'une troisième colonne de tarifs flexible pour l'offre découverte (80 € au lieu de 120 €) et information de déplacement.
+- Ajout de l'option dans le menu déroulant du formulaire de contact.
+
+#### Optimisation UI/UX & Agenda
+- Refonte esthétique de la rubrique agenda avec un cadre continu solide vert de niveau premium.
+- Harmonisation des titres, boutons et explications pour inciter à la consultation de l'agenda en ligne et au contact direct.
+- Intégration d'un second encadré de localisation/déplacement dans la carte de l'atelier d'initiation et renommage du CTA en "Me contacter".
+
 ---
 
 ## État du projet — Sprint 2026-05-08
