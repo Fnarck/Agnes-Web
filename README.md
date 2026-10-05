@@ -19,6 +19,38 @@ Agnes-Web/
     └── fleur_bach_jaune.jpg         ← Fleur jaune de Bach
 ```
 
+## État du projet — Sprint 2026-10-01
+
+### Expérience interactive « Quelle fleur vous parle aujourd'hui ? »
+
+Intégration finalisée et contrôlée localement le 2026-10-05. Publication sur `agnesbrandely.fr` encore en attente
+du feu vert de Franck : la présence des fichiers dans le dépôt local ne signifie pas que la section est en ligne.
+
+- Ajout d'une section éditoriale dédiée, placée après la présentation de l'approche du Dr Bach.
+- Présentation concise du parcours : 7 familles émotionnelles, 38 fleurs et durée indicative de 5 minutes.
+- CTA externe vers le prototype public :
+  `https://fleurs-bach-agnes-experience.espace-de-tr-3475.chatgpt.site`
+- Ouverture dans un nouvel onglet avec protection `noopener noreferrer`.
+- Mention explicite du caractère non diagnostique de l'expérience.
+- Lien ajouté au pied de page pour faciliter l'accès à la section.
+- Mise à jour des mentions d'hébergement : Vercel est la source de vérité actuelle.
+- Accès annoncé comme ouvrant un nouvel onglet pour les lecteurs d'écran.
+- Grille et bouton adaptés aux petits écrans, y compris 320 px, et prise en compte de la préférence de mouvement réduit.
+
+Contrôles effectués : syntaxe de `main.js`, absence d'erreurs de whitespace Git, 54 identifiants HTML uniques,
+7 références de fichiers locaux et 24 ancres internes vérifiées, rendu de la nouvelle section à 320, 390, 768 et
+1024 px. Le prototype public se charge sans authentification. Aucune soumission du formulaire de contact n'a été faite.
+
+La nouvelle section ne déborde plus à 320 px. Un débordement global de la page existe encore à cette largeur en dehors
+de cette section ; il relève d'une revue responsive générale, non incluse dans cette intégration.
+
+**Attention au déploiement :** Vercel est relié au dépôt GitHub. Un push sur la branche de production peut déclencher
+automatiquement une publication. Ne pas pousser sur `main` sans autorisation explicite de publication.
+
+Le prototype ne conserve actuellement aucune réponse : les choix restent en mémoire dans le navigateur pendant le
+parcours puis disparaissent au rechargement. Une évolution ultérieure pourra ajouter une collecte anonyme et un export
+CSV, sous réserve de définir le consentement, les données strictement nécessaires et leur durée de conservation.
+
 ## État du projet — Sprint 2026-05-21
 
 ### ✅ Effectué
